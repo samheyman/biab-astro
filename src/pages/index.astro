@@ -1,0 +1,268 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title={"Biab International"} description={"Let us serve you better"}>
+	<section id="banner" class="banner--home">
+		<div class="banner--home">
+			<div class="inner">
+				<h2>Products and logistics solutions</h2>
+				<p>tailor-made for UN organizations, NGOs and the private sector</p>
+				<ul class="buttons">
+					<li>
+						<a href="#main" class="button button--outlined fit scrolly"
+						>Read more</a
+						>
+					</li>
+					<li>
+						<a
+						href="contact.html"
+						class="button button--primary fit scrolly"
+						>Contact us</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main -->
+	<section id="main">
+	<header class="special container">
+		<!-- <span class="icon solid fa-chart-bar"></span> -->
+		<div class="left">
+		<h2>What we do</h2>
+		<p>
+			We supply our customers the products they need under the main principles of best value for money, life cycle cost, sustainability, environment and innovation. We take care of the complete process from receiving inquiries, matchmaking of products to the needs, product development and safe deliveries to final destinations anywhere in the world. Risk management is one of the key components in our dealings.
+		</p>
+		<ul class="buttons">
+			<!-- <li><a href="#" class="button primary">Read more</a></li> -->
+			<li>
+			<a href="./services.html" class="button button--outlined--dark"
+				>Our services</a
+			>
+			</li>
+		</ul>
+		</div>
+		<div class="right">
+		<img class="shaddow-light" src="images/distribution.jpg" />
+		</div>
+	</header>
+	</section>
+
+			  <!-- Main -->
+		
+			  <section id="why-us">
+				<!-- <div class="row header container special">
+					
+					<p>
+					  BIAB International AB started its operations in 1980 in
+					  Gothenburg, Sweden with the main focus on serving the United
+					  Nations and international NGOs with supply of products.
+					</p>
+				  </div> -->
+				<div><h2>Why choose us?</h2></div>
+		
+				<div class="row">
+				  <div class="col-3 col-12-narrower">
+					<section>
+					  <div class="icon-border">
+						<span
+						  class="icon solid featured icon-placeholder icon-partner"
+						></span>
+					  </div>
+					  <header>
+						<h3>Partner network</h3>
+					  </header>
+					  <p>
+						Through our extensive network of pre-selected manufacturers and
+						logistics providers, we are able to secure the best business
+						deals.
+					  </p>
+					</section>
+				  </div>
+				  <div class="col-3 col-12-narrower">
+					<section>
+					  <div class="icon-border">
+						<span
+						  style="padding-bottom: 10px"
+						  class="icon solid featured icon-placeholder icon-supply"
+						></span>
+					  </div>
+					  <header>
+						<h3>Supply chain</h3>
+					  </header>
+					  <p>
+						We take overall responsibility for product supply, complex and
+						global deliveries: warehousing, packaging, and distribution.
+					  </p>
+					</section>
+				  </div>
+				  <div class="col-3 col-12-narrower">
+					<section>
+					  <div class="icon-border">
+						<span
+						  class="icon solid featured icon-placeholder icon-financial"
+						></span>
+					  </div>
+					  <header>
+						<h3>Financial fundament</h3>
+					  </header>
+					  <p>
+						BIAB International has constantly received the highest credit
+						worthiness, rated AAA by Dun & Bradstreet.
+					  </p>
+					</section>
+				  </div>
+				  <div class="col-3 col-12-narrower">
+					<section>
+					  <div class="icon-border">
+						<span
+						  class="icon solid featured icon-placeholder icon-risk"
+						></span>
+					  </div>
+					  <header>
+						<h3>Risk management</h3>
+					  </header>
+					  <p>
+						We are fully equipped to handle transactional, logistics, and
+						financial risks, and bear the potential transactional risks.
+					  </p>
+					</section>
+				  </div>
+				</div>
+			  </section>
+		
+			  <!-- ISO Certified -->
+			  
+		
+			  <!-- CTA -->
+			  <section id="cta">
+				<header class="special container">
+				  <img
+					class="shaddow-dark"
+					src="./images/innovation.png"
+					alt="innovation image"
+				  />
+				  <div class="cta__text">
+					<!-- <h3>BIAB</h3> -->
+					<h2>Innovation</h2>
+					<p>
+					  We are constantly striving to supply more innovative, environment
+					  friendly and sustainable solutions.
+					</p>
+					<ul class="buttons">
+					  <!-- <li><a href="#" class="button primary">Read more</a></li> -->
+					  <li>
+						<a href="innovation.html" class="button button--outlined"
+						  >Read more</a
+						>
+					  </li>
+					</ul>
+				  </div>
+				</header>
+			  </section>
+			  
+			  <section id="iso">
+				<header class="special container">
+				 
+				  <div class="cta__text">
+					<h3>
+					  Standards and Quality
+					</h3>
+					<h2>We are an ISO Certified company</h2>
+		
+					<ul class="buttons">
+					  <li>
+						<a href="./uploads/BIAB International AB, ISO 14001.pdf" target="_blank"
+						  ><img alt="ISO 14001 certification logo" src="./images/iso_14001.png"/></a
+						>
+					  </li>
+					  <li>
+						<a href="./uploads/BIAB International AB, ISO 9001.pdf" target="_blank"
+						  ><img alt="ISO 9001 certification logo" src="./images/iso_9001.png"/></a
+						>
+					  </li>
+					</ul>
+				  </div>
+				</header>
+			  </section>
+</Layout>
+
+<style>
+	.banner--home {
+		background: url(home_banner.jpeg) rgba(7,10,13,.52);
+    	background-size: cover;
+    	background-position: 80%;
+		background-blend-mode: multiply;
+    	height: 38em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.inner {
+		padding: 5.8em 3em 3em;
+		/* animation: reveal-banner 1s ease-in-out .25s; */
+		/* animation-fill-mode: forwards; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		/* opacity: 0; */
+		color: #fff;
+    	text-align: center;
+	}
+
+	h2 {
+		font-size: 2.9rem;
+    	font-weight: 300;
+		letter-spacing: 0;
+		color: #fff;
+		margin-bottom: 0.6rem;
+	}
+
+	p {
+		font-size: 1.125rem;
+    	font-weight: 400;
+    	width: 100%;
+		letter-spacing: 0.1em;
+		margin: 0;
+	}
+
+	ul {
+		display: flex;
+		margin-top: 3rem;
+	}
+
+	.button {
+		margin: 0 1em;
+		border: 1px solid;
+		border-radius: 4px;
+		font-weight: 400;
+		padding: 0.6em 1.95em;
+		letter-spacing: 1px;
+		min-width: fit-content;
+		text-transform: none;
+		font-size: .8em;
+		cursor: pointer;
+	}
+
+	.button--outlined {
+		background: transparent;
+   		border-color: #fff;
+    	color: #fff;
+	}
+
+	.button--primary {
+		background: var(--clr-primary);
+    	border-color: var(--clr-primary);
+    	color: #fff;
+	}
+
+</style>
+

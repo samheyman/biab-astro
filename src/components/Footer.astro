@@ -1,0 +1,123 @@
+---
+const today = new Date();
+---
+
+<footer class="footer bg-dark">
+	<div class="links">
+	  <ul class="copyright">
+		<li><a href="about.html">About</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="innovation.html">Innovation</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<!-- <li><a href="#">Terms</a></li>
+		<li><a href="#">Privacy</a></li> -->
+		<li><a href="https://www.linkedin.com/company/biab-international-ab/about/" class="icon brands circle fa-linkedin"></a></li>
+	  </ul>
+	  <ul class="copyright light">
+		<li>&copy; 2021 Biab International AB. All rights reserved.</li>
+		<li>
+		  Website by <a href="https://samheyman.github.io/">Sam Heyman</a>
+		</li>
+	  </ul>
+  </div>
+</footer>
+<style>
+	footer {
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    } 
+	.social-media {
+      padding-bottom: 20px;
+    }
+  
+    .copyright {
+      padding:0;
+      margin: 0;
+  
+	 } .copyright li {
+        margin-left: 0.5em;
+        padding-left: 0.6em;
+        border-left: none;
+        line-height: 1.8;
+        font-weight: 500;
+        font-size: 14px;
+        display: inline;        
+      }
+
+      .links {
+        margin-bottom: 10px;
+      }
+  
+      .light {
+        color: hsl(0, 0%, 60%);
+        
+	    }  
+		
+		li {
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      
+
+      .terms {  
+        color: hsl(0, 0%, 60%);
+        font-weight: 400;
+        font-size: 12px;
+	  }
+	  
+	  li:not(:first-child) {
+          margin: 0;
+          padding: 0;
+          font-size: 13px;
+          font-weight: 400;
+          margin-left: 5px;
+          padding-left: 7px;
+          border-left: 1px solid grey;
+        }
+      
+  
+      .icon.circle {
+        width: fit-content;
+      }
+      
+    
+    a {
+      border-bottom: none;
+    }
+  
+    @media (min-width: 900px) {
+      a {
+		padding: 3em 5em;
+	  }
+    }
+  
+	.icon.circle.fa-linkedin-in {
+  background: #2977c9;
+  color: #fff;
+}
+
+.social-media__link {
+  text-decoration: none;
+  color: inherit;
+  /* margin-left: 10px; */
+  border-bottom: 0;
+  font-size: 13px;
+}
+.social-media__icon {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 8px;
+  border-bottom: 0;
+}
+
+.social-media__link i {
+  padding-left: 10px;
+  /* font-size: 24px; */
+}
+</style>

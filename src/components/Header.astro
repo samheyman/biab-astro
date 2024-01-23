@@ -1,0 +1,70 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); 
+---
+
+<header id="header" >
+	<a class="logo-container" href="index.html">
+		<img src="original_logo.png" class="logo"/>
+	</a>
+	<nav id="nav">
+		<ul>
+			<li class={currentPath === "" ? "active" : ""}><a href="/">Home</a></li>
+			<li class={currentPath === "about" ? "active" : ""}><a href="/about">About us</a></li>
+			<li class={currentPath === "services" ? "active" : ""}><a href="/services">Our services</a></li>
+			<li class={currentPath === "innovation" ? "active" : ""}><a href="/innovation">Innovation</a></li>
+			<li class={currentPath === "contact" ? "active" : ""}>
+				<a href="/contact">Contact us</a>
+			</li>
+			<li><a href="/innovation">SE</a> | <a class="active" href="/innovation">EN</a></li>
+		</ul>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 1rem 2.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: .8em;
+		/* border: 1px solid red; */
+		background: transparent;
+		position: absolute;
+		width: 100%;
+	}
+	.logo-container {
+		margin:0;
+		padding: 0;
+		text-decoration: none;
+		border:none;
+	}
+	.logo {
+		height: 60px;
+	}
+	#nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	ul {
+		display: flex;
+	}
+	li {
+		padding: 1em 0 1em 3em;
+		color: white;
+
+	}
+	a {
+		color: white;
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+		font-weight: 600;
+	}
+	
+</style>
