@@ -1,28 +1,30 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Layout from '../layouts/Layout.astro';
+// const lang = Astro.request.headers.get('accept-language');
 ---
+
 
 <Layout title={"Biab International"} description={"Let us serve you better"}>
 	<section id="banner" class="banner--home">
 		<div class="banner--home">
 			<div class="inner">
-				<h2>Products and logistics solutions</h2>
-				<p>tailor-made for UN organizations, NGOs and the private sector</p>
+				<h2><span lang="en">Products and logistics solutions</span>
+					<span lang="sv">Produkter och logistiklösningar</span></h2>
+				<p><span lang="en">tailor-made for UN organizations, NGOs and the private sector</span>
+					<span lang="sv">skräddarsytt för FN-organisationer, icke-statliga organisationer och den privata sektorn</span></p>
 				<ul class="buttons">
 					<li>
 						<a href="#main" class="button button--outlined fit scrolly"
-						>Read more</a
+						><span lang="en">Read more</span>
+						<span lang="sv">Läs mer</span></a
 						>
 					</li>
 					<li>
 						<a
 						href="contact.html"
 						class="button button--primary fit scrolly"
-						>Contact us</a
+						><span lang="en">Contact us</span>
+						<span lang="sv">Kontakta oss</span></a
 						>
 					</li>
 				</ul>
@@ -49,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
 		</ul>
 		</div>
 		<div class="right">
-		<img class="shaddow-light" src="images/distribution.jpg" />
+		<img class="shaddow-light" src="./distribution.jpg" />
 		</div>
 	</header>
 	</section>
@@ -145,7 +147,7 @@ import Layout from '../layouts/Layout.astro';
 				<header class="special container">
 				  <img
 					class="shaddow-dark"
-					src="./images/innovation.png"
+					src="./innovation.png"
 					alt="innovation image"
 				  />
 				  <div class="cta__text">
@@ -179,12 +181,12 @@ import Layout from '../layouts/Layout.astro';
 					<ul class="buttons">
 					  <li>
 						<a href="./uploads/BIAB International AB, ISO 14001.pdf" target="_blank"
-						  ><img alt="ISO 14001 certification logo" src="./images/iso_14001.png"/></a
+						  ><img alt="ISO 14001 certification logo" src="./iso_14001.png"/></a
 						>
 					  </li>
 					  <li>
 						<a href="./uploads/BIAB International AB, ISO 9001.pdf" target="_blank"
-						  ><img alt="ISO 9001 certification logo" src="./images/iso_9001.png"/></a
+						  ><img alt="ISO 9001 certification logo" src="./iso_9001.png"/></a
 						>
 					  </li>
 					</ul>

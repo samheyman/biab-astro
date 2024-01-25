@@ -4,21 +4,49 @@ const currentPath = pathname.slice(1);
 ---
 
 <header id="header" >
-	<a class="logo-container" href="index.html">
+	<a class="logo-container" href="/">
 		<img src="original_logo.png" class="logo"/>
 	</a>
-	<nav id="nav">
+	<nav>
 		<ul>
-			<li class={currentPath === "" ? "active" : ""}><a href="/">Home</a></li>
-			<li class={currentPath === "about" ? "active" : ""}><a href="/about">About us</a></li>
-			<li class={currentPath === "services" ? "active" : ""}><a href="/services">Our services</a></li>
-			<li class={currentPath === "innovation" ? "active" : ""}><a href="/innovation">Innovation</a></li>
-			<li class={currentPath === "contact" ? "active" : ""}>
-				<a href="/contact">Contact us</a>
+			<li class={currentPath === "" ? "active" : ""}>
+				<a href="/">
+					<span lang="en">Home</span>
+					<span lang="sv">Hjem</span>
+				</a>
 			</li>
-			<li><a href="/innovation">SE</a> | <a class="active" href="/innovation">EN</a></li>
+			<li class={currentPath === "about" ? "active" : ""}>
+				<a href="/about">
+					<span lang="en">About us</span>
+					<span lang="sv">Om oss</span>
+				</a>
+			</li>
+			<li class={currentPath === "services" ? "active" : ""}>
+				<a href="/services">
+					<span lang="en">Our services</span>
+					<span lang="sv">Våra tjänster</span>
+				</a>
+			</li>
+			<li class={currentPath === "innovation" ? "active" : ""}>
+				<a href="/innovation">
+					<span lang="en">Innovation</span>
+					<span lang="sv">Innovation</span>
+				</a>
+			</li>
+			<li class={currentPath === "contact" ? "active" : ""}>
+				<a href="/contact">
+					<span lang="en">Contact us</span>
+					<span lang="sv">Kontakta oss</span>
+				</a>
+			</li>
+			<li>
+				<a class="selectedLanguage" id="swedish" onclick="return setLocale('sv')" href="#">SV</a> 
+				| <a class="" id="english" onclick="return setLocale('en')" href="#">EN</a></li>
 		</ul>
 	</nav>
+	
+	<!-- <astro:language-switcher /> -->
+
 </header>
 <style>
 	header {
@@ -42,7 +70,7 @@ const currentPath = pathname.slice(1);
 	.logo {
 		height: 60px;
 	}
-	#nav {
+	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -57,14 +85,31 @@ const currentPath = pathname.slice(1);
 	}
 	a {
 		color: white;
-		border-bottom: 4px solid transparent;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 	.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
 		font-weight: 600;
 	}
-	
+	.selectedLanguage {
+		border-bottom: 4px solid #024f79;
+		font-weight: 600;
+	}
 </style>
+<script is:inline>
+	if (
+		(window.localStorage.getItem("language") == null && navigator.language.includes("sv"))
+		|| window.localStorage.getItem("language") == "sv"
+		) {
+		document.getElementById("swedish").classList.add("selectedLanguage");
+		document.getElementById("english").classList.remove("selectedLanguage");
+	} else {
+		document.getElementById("swedish").classList.remove("selectedLanguage");
+		document.getElementById("english").classList.add("selectedLanguage");
+	}
+
+	function setLocale(langCode) {
+		window.localStorage.setItem('language', langCode);
+		location.reload();
+	}
+</script>

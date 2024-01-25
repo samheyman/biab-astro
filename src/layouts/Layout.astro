@@ -4,14 +4,22 @@ import Header from "../components/Header.astro";
 
 interface Props {
  title: string,
- description: string
+ description: string,
 }
 
 const {title, description}:Props = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<script>
+  var userLanguage = window.localStorage.getItem("language") || "en";
+  if (window.localStorage.getItem("language") == null && navigator.language.includes("sv")) {
+    userLanguage = "sv";
+  } 
+  document.documentElement.setAttribute("lang", userLanguage);
+</script>
+
+<html lang="sv">
 	<head>
 		<BaseHead title={title} description={description} />
 	</head>
@@ -148,4 +156,9 @@ a {
   border-bottom: none;
 }
 
+html[lang="en"] [lang="sv"], 
+html[lang="sv"] [lang="en"] { 
+    display: none;
+}
 </style>
+
