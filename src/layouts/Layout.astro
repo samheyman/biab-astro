@@ -12,14 +12,17 @@ const {title, description}:Props = Astro.props;
 
 <!doctype html>
 <script>
-  var userLanguage = window.localStorage.getItem("language") || "en";
+  let userLanguage = "en";
+  if (window.localStorage.getItem("language")?.includes("sv")) {
+    userLanguage = "sv"
+  }
   if (window.localStorage.getItem("language") == null && navigator.language.includes("sv")) {
     userLanguage = "sv";
   } 
   document.documentElement.setAttribute("lang", userLanguage);
 </script>
 
-<html lang="sv">
+<html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
 	</head>
