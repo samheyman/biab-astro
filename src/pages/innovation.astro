@@ -3,13 +3,159 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title={"Biab International"} description={"Let us serve you better"}>
-    <div>
-        <h2>Biab Innovation</h2>
-        <p>
-            <span lang="en">About our innovation</span>
-			<span lang="sv">Om vår innovation</span>
-        </p>
-    </div>
+    <section id="banner" class="banner--innovation">
+        <div class="banner__layer banner__layer--innovation">
+          <!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+          <div class="inner">
+            <!-- <h2>BIAB International</h2> -->
+            <h2><span lang="en">Innovation</span>
+                <span lang="sv">Innovation</span></h2>
+            <h4><span lang="en">Innovative cleantech solutions for humanitarian organizations. </span>
+                <span lang="sv">Innovativa cleantech-lösningar för humanitära organisationer.</span>
+            </h4>
+            <!-- <p>
+              Innovative cleantech solutions for humanitarian organizations.
+            </p> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Main -->
+      <section id="innovation-main">
+        <header class="special container">
+          <!-- <span class="icon solid fa-chart-bar"></span> -->
+          <div class="left">
+            <h2><span lang="en">An added value </span>
+                <span lang="sv">Ett mervärde</span></h2>
+            
+            <!-- <ul class="buttons"> -->
+            <!-- <li><a href="#" class="button primary">Read more</a></li> -->
+            <!-- <li>
+                <a href="./services.html" class="button button--outlined--dark"
+                  >Our services</a
+                >
+              </li>
+            </ul> -->
+          </div>
+          <div class="right">
+            <p><span lang="en">We are constantly striving to supply more innovative, environmently friendly and sustainable solutions.</span>
+                <span lang="sv">Vi strävar ständigt efter att leverera mer innovativa, miljövänliga och hållbara lösningar.</span>
+              
+            </p>
+            <!-- <img src="images/distribution.jpg" /> -->
+          </div>
+        </header>
+      </section>
+      <article id="innovation">
+        <section class="wrapper container special">
+          <header class="major">
+            <h2><span lang="en">Our areas of cleantech solutions</span>
+                <span lang="sv">Våra områden inom cleantech-lösningar</span></h2>
+          </header>
+
+          <div class="row">
+            <div class="col-6 col-12-narrower">
+              <section>
+                <a href="#" class="image featured"
+                  ><img src="images/innovation/water.jpeg" alt=""
+                /></a>
+                <header>
+                  <h3><span lang="en">Hygiene & sanitation </span>
+                    <span lang="sv">Hygien & sanitet</span></h3>
+                </header>
+                <p><span lang="en">We supply products, equipment and accessories for personal
+                    hygiene and sanitation as well as to keep premises and
+                    locations hygienically clean. </span>
+                    <span lang="sv">Vi levererar produkter, utrustning och tillbehör för personligt bruk
+                        hygien och sanitet samt att hålla lokaler och
+                        platser hygieniskt rena.</span>
+                  
+                </p>
+              </section>
+            </div>
+            <div class="col-6 col-12-narrower">
+              <section>
+                <a href="#" class="image featured"
+                  ><img src="images/innovation/plant.jpeg" alt=""
+                /></a>
+                <header>
+                  <h3><span lang="en">Agriculture & fishing </span>
+                    <span lang="sv">Jordbruk & fiske</span></h3>
+                </header>
+                <p><span lang="en">This range comprises of agriculture tools, watering equipment
+                    and accessories. Fishing nets, twins and hooks are supplied as
+                    individual items or as tailor made kits. </span>
+                    <span lang="sv">Detta sortiment består av jordbruksverktyg, bevattningsutrustning
+                        och tillbehör. Fisknät, tvillingar och krokar levereras som
+                        enskilda föremål eller som skräddarsydda kit.</span>
+                  
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-12-narrower">
+              <section>
+                <a href="#" class="image featured"
+                  ><img src="images/innovation/solar.jpeg" alt=""
+                /></a>
+                <header>
+                  <h3><span lang="en">Solar energy systems </span>
+                    <span lang="sv">Solenergisystem</span></h3>
+                </header>
+                <p><span lang="en">Wide range of tailored solutions including solar water pumps,
+                    solar space heating and cooling and solar powered lighting. </span>
+                    <span lang="sv">Brett utbud av skräddarsydda lösningar inklusive solvattenpumpar,
+                        soluppvärmning och -kylning och solcellsdriven belysning.</span>
+                  
+                </p>
+              </section>
+            </div>
+            <div class="col-6 col-12-narrower">
+              <section>
+                <a href="#" class="image featured"
+                  ><img src="images/innovation/tent.jpeg" alt=""
+                /></a>
+                <header>
+                  <h3><span lang="en">Shelter solutions </span>
+                    <span lang="sv">Skyddslösningar</span></h3>
+                </header>
+                <p><span lang="en"> Sustainable shelter solutions such as shelter kits, products
+                    for rehabilitation/upgrading of emergency shelters and
+                    infrastructure support in camps and spontaneous settlements. </span>
+                    <span lang="sv">Hållbara skyddslösningar som skyddspaket, produkter
+                        för rehabilitering/uppgradering av jourhem och
+                        infrastrukturstöd i läger och spontana bosättningar.</span>
+                 
+                </p>
+              </section>
+            </div>
+          </div>
+
+          <footer class="major">
+            <ul class="buttons">
+              <li><a href="contact.html" class="button"><span lang="en">Get in touch</span>
+                <span lang="sv">Komma i kontakt</span></a></li>
+            </ul>
+          </footer>
+        </section>
+      </article>
+      <!-- CTA -->
+      <section id="follow-us">
+        <header class="special container">
+            <h2><span lang="en">Follow us </span>
+                <span lang="sv">Följ oss</span></h2>
+            <p><span lang="en">Follow us on LinkedIn to keep up-to-date our latest updates and articles. </span>
+                <span lang="sv">Följ oss på LinkedIn för att hålla dig uppdaterad om våra senaste uppdateringar och artiklar.</span></p>
+            <a href="https://www.linkedin.com/company/biab-international-ab/about/" class="circle fa fa-linkedin">
+              </a>
+        </header>
+      </section>
 </Layout>
 
 <style>

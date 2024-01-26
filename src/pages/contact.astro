@@ -3,7 +3,79 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title={"Biab International"} description={"Let us serve you better"}>
-    <h2>Contact us</h2>
+    <section id="banner" class="banner--contact">
+        <div class="banner__layer banner__layer--contact">
+            <div class="inner">
+
+              <h2><span lang="en">Contact us</span>
+                <span lang="sv">Kontakta oss</span></h2>
+              <h4><span lang="en">let us serve you better</span>
+                <span lang="sv">låt oss tjäna dig bättre</span></h4>
+          </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Main -->
+        <article id="main-contact">
+
+            <!-- <header class="special container">
+                <span class="icon solid fa-envelope"></span>
+                <h2>We’d love to hear from you</h2>
+                <p>Whether you have a question about features, pricing, pilots, need a demo, or anything else, our team is ready to answer all your questions!</p>
+            </header> -->
+
+            <!-- One -->
+                
+                    <!-- Content -->
+                        <div class="content">
+                            
+                                <section class="wrapper style4 special container medium">
+                            
+                            <div class="envelope">
+                            <span class="icon solid fa-envelope enveloppe"></span>
+                        </div>
+                            <form action="send_email.php"  method="post"> 
+                                <div class="row gtr-50">
+                                    <div class="col-6 col-12-mobile">
+                                        <input type="text" name="name" placeholder="Name" />
+                                    </div>
+                                    <div class="col-6 col-12-mobile">
+                                        <input type="text" name="email" placeholder="Email" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="subject" placeholder="Subject" />
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="message" placeholder="Message" rows="7"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="buttons">
+                                            <li><input type="submit" class="special" value="Send Message" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+
+                        <section id="about-us-main">
+                            <header class="special container">
+                              <!-- <span class="icon solid fa-chart-bar"></span> -->
+                              <div class="left">
+                                <h2><span lang="en">Head office</span>
+                                    <span lang="sv">Huvudkontor</span></h2>
+                              </div>
+                              <div class="right">
+                                <p><span style="font-weight:600">BIAB INTERNATIONAL</span></p>
+                                <p>Terrassgatan 11</p>
+                                <p><span lang="en">411 33 Gothenburg</span>
+                                    <span lang="sv">411 33 Göteborg</span></p>
+                                <p><span lang="en">Sweden</span>
+                                    <span lang="sv">Sverige</span></p>
+                              </div>
+                            </header>
+                          </section>
 </Layout>
 
 <style>
