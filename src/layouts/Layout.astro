@@ -143,7 +143,7 @@ h4 {
 }
 
 p {
-  width: clamp(45ch, 50%, 75ch);
+  /* width: clamp(45ch, 50%, 75ch); */
   font-size: 1rem;
   line-height: 170%;
   margin: 0;
@@ -162,6 +162,35 @@ a {
 html[lang="en"] [lang="sv"], 
 html[lang="sv"] [lang="en"] { 
     display: none;
+}
+.button {
+		margin: 0;
+		border: 1px solid;
+		border-radius: 4px;
+		font-weight: 400;
+		padding: 0.6em 1.95em;
+		letter-spacing: 1px;
+		min-width: fit-content;
+		text-transform: none;
+		font-size: .8em;
+		cursor: pointer;
+	}
+
+	.button--outlined {
+		background: transparent;
+   		border-color: #fff;
+    	color: #fff;
+	}
+
+	.button--primary {
+		background: var(--clr-primary);
+    	border-color: var(--clr-primary);
+    	color: #fff;
+	}
+.button--outlined--dark {
+    background: transparent;
+    border-color: var(--clr-primary);
+    color: var(--clr-primary);
 }
 </style>
 
