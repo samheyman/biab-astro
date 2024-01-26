@@ -35,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<section id="what-we-do">
-		<div class="container">
+		<div class="container flex flex-row">
 			<div class="left">
 				<h2>
 					<span lang="en">What we do</span>
@@ -62,99 +62,79 @@ import Layout from '../layouts/Layout.astro';
 
 		
 	<section id="why-us">
-				<!-- <div class="row header container special">
-					
-					<p>
-					  BIAB International AB started its operations in 1980 in
-					  Gothenburg, Sweden with the main focus on serving the United
-					  Nations and international NGOs with supply of products.
-					</p>
-				  </div> -->
-				<div><h2><span lang="en">Why choose us?</span>
-					<span lang="sv">Varför välja oss?</span></h2></div>
-		
-				<div class="row">
-				  <div class="col-3 col-12-narrower">
-					<section>
-					  <div class="icon-border">
-						<span
-						  class="icon solid featured icon-placeholder icon-partner"
-						></span>
-					  </div>
-					  <header>
-						<h3><span lang="en">Partner network</span>
-							<span lang="sv">Partnernätverk</span></h3>
-					  </header>
-					  <p><span lang="en">Through our extensive network of pre-selected manufacturers and
-						logistics providers, we are able to secure the best business
-						deals.</span>
+		<div class="container flex flex-col justify-center items-center ">
+			<div class="w-full flex items-center justify-center	 ">
+				<h2>
+					<span lang="en">Why choose us?</span>
+					<span lang="sv">Varför välja oss?</span>
+				</h2>
+			</div>
+			<div class="flex flex-row mt-12">
+				<div class="flex flex-col items-center justify-start mx-8">
+					<div class="icon-border">
+						<span class="icon solid featured icon-placeholder icon-partner"></span>
+					</div>
+					<h3 class="uppercase">
+						<span lang="en">Partner network</span>
+						<span lang="sv">Partnernätverk</span>
+					</h3>
+					<p class="text-center">
+						<span lang="en">Through our extensive network of pre-selected manufacturers and
+					logistics providers, we are able to secure the best business
+					deals.</span>
 						<span lang="sv">Genom vårt omfattande nätverk av förutvalda tillverkare och
-							logistikleverantörer kan vi säkra den bästa verksamheten
-							erbjudanden.</span>
-						
-					  </p>
-					</section>
-				  </div>
-				  <div class="col-3 col-12-narrower">
-					<section>
-					  <div class="icon-border">
-						<span
-						  style="padding-bottom: 10px"
-						  class="icon solid featured icon-placeholder icon-supply"
-						></span>
-					  </div>
-					  <header>
-						<h3><span lang="en">Supply chain</span>
-							<span lang="sv">Försörjningskedjan</span></h3>
-					  </header>
-					  <p><span lang="en">We take overall responsibility for product supply, complex and
-						global deliveries: warehousing, packaging, and distribution.</span>
-						<span lang="sv">Vi tar ett helhetsansvar för produktförsörjning, komplex och
-							globala leveranser: lager, förpackning och distribution.</span>
-						
-					  </p>
-					</section>
-				  </div>
-				  <div class="col-3 col-12-narrower">
-					<section>
-					  <div class="icon-border">
-						<span
-						  class="icon solid featured icon-placeholder icon-financial"
-						></span>
-					  </div>
-					  <header>
-						<h3><span lang="en">Financial fundament</span>
-							<span lang="sv">Finansiell grund</span></h3>
-					  </header>
-					  <p>
-						<span lang="en">BIAB International has constantly received the highest credit
-							worthiness, rated AAA by Dun & Bradstreet.</span>
-						<span lang="sv">BIAB International har hela tiden fått högsta kredit
-							värdighet, betygsatt AAA av Dun & Bradstreet.</span>
-					  </p>
-					</section>
-				  </div>
-				  <div class="col-3 col-12-narrower">
-					<section>
-					  <div class="icon-border">
-						<span
-						  class="icon solid featured icon-placeholder icon-risk"
-						></span>
-					  </div>
-					  <header>
-						<h3><span lang="en">Risk management</span>
-							<span lang="sv">Risk management</span></h3>
-					  </header>
-					  <p><span lang="en">We are fully equipped to handle transactional, logistics, and
-						financial risks, and bear the potential transactional risks.</span>
-						<span lang="sv">Vi är fullt utrustade för att hantera transaktioner, logistik och
-							finansiella risker och bära de potentiella transaktionsriskerna.</span>
-						
-					  </p>
-					</section>
-				  </div>
+						logistikleverantörer kan vi säkra den bästa verksamheten
+						erbjudanden.</span>
+					</p>
 				</div>
-			  </section>
+				<div class="flex flex-col items-center justify-start mx-8">
+					<div class="icon-border">
+					<span
+						style="padding-bottom: 10px"
+						class="icon solid featured icon-placeholder icon-supply"
+					></span>
+					</div>
+					<h3 class="uppercase"><span lang="en">Supply chain</span>
+						<span lang="sv">Försörjningskedjan</span></h3>
+					<p class="text-center"><span lang="en">We take overall responsibility for product supply, complex and
+					global deliveries: warehousing, packaging, and distribution.</span>
+					<span lang="sv">Vi tar ett helhetsansvar för produktförsörjning, komplex och
+						globala leveranser: lager, förpackning och distribution.</span>
+					
+					</p>
+				</div>
+				<div class="flex flex-col items-center justify-start mx-8">
+					<div class="icon-border">
+					<span
+						class="icon solid featured icon-placeholder icon-financial"
+					></span>
+					</div>
+					<h3 class="uppercase"><span lang="en">Financial fundament</span>
+						<span lang="sv">Finansiell grund</span></h3>
+					<p class="text-center">
+					<span lang="en">BIAB International has constantly received the highest credit
+						worthiness, rated AAA by Dun & Bradstreet.</span>
+					<span lang="sv">BIAB International har hela tiden fått högsta kredit
+						värdighet, betygsatt AAA av Dun & Bradstreet.</span>
+					</p>
+				</div>
+				<div class="flex flex-col items-center justify-start mx-8">
+					<div class="icon-border">
+					<span
+						class="icon solid featured icon-placeholder icon-risk"
+					></span>
+					</div>
+					<h3 class="uppercase"><span lang="en">Risk management</span>
+						<span lang="sv">Risk management</span></h3>
+					<p class="text-center"><span lang="en">We are fully equipped to handle transactional, logistics, and
+					financial risks, and bear the potential transactional risks.</span>
+					<span lang="sv">Vi är fullt utrustade för att hantera transaktioner, logistik och
+						finansiella risker och bära de potentiella transaktionsriskerna.</span>
+					
+					</p>
+			</div>
+		</div>
+	</section>
 		
 			  <!-- ISO Certified -->
 			  
@@ -280,7 +260,7 @@ import Layout from '../layouts/Layout.astro';
 		justify-content: center;
 	}
 
-	#what-we-do h2 {
+	#what-we-do h2, #why-us h2 {
 		color: var(--clr-primary-variant);
 		margin: 0;
 		font-size: 1.75rem;
@@ -293,12 +273,30 @@ import Layout from '../layouts/Layout.astro';
 		margin: 2em 0 3em;
 	}
 
+	#why-us {
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#why-us p {
+		/* width: 100%; */
+		text-align: center;
+		/* margin-bottom: 40px; */
+		/* max-width: 100%; */
+		line-height: 1.6;
+		font-size: .9rem;
+		letter-spacing: 0;
+		/* text-align: center!important; */
+		color: rgba(30,28,22,.67);
+	}
+
 	.container {
 		max-width: 1170px;
 		margin: 6em 0;
 		/* border: 1px dashed red; */
-		display: flex;
-		flex-direction: row;
 	}
 
 	.left {
@@ -311,6 +309,40 @@ import Layout from '../layouts/Layout.astro';
 	.right {
 		width: 40%;
 		padding-left: 40px;
+	}
+
+	.icon.featured {
+		cursor: default;
+		display: block;
+		/* margin: 0 0 1.5em; */
+		opacity: .35;
+		text-align: center;
+	}
+
+	.icon-placeholder {
+		height: 130px;
+		width: 130px;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		background-size: contain;
+	}
+
+	.icon-supply {
+		background-image: url("../icons/supply_chain.png");
+	}
+	.icon-financial {
+		background-image: url("../icons/financial.png");
+	}
+	.icon-partner {
+		background-image: url("../icons/partner_network.png");
+	}
+	.icon-risk {
+		background-image: url("../icons/risk.png");
+	}
+
+
+	.icon.featured {
+		opacity: 0.8;
 	}
 
 </style>
